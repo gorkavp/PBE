@@ -1,4 +1,4 @@
-import binascii
+import binasci
 import board
 import busio
 from digitalio import DigitalInOut
