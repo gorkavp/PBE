@@ -18,7 +18,8 @@ class RfidPN532:
       if uid is None:
         continue
       leido = True
-      return binsascii.hexlify(uid).decode('utf-8').upper()
+      uid = binsascii.hexlify(uid).decode('utf-8').upper()
+    return uid
    
 if __name__=="__main__":
   rf = RfidPN532()
