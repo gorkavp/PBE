@@ -4,6 +4,8 @@ import busio
 from digitalio import DigitalInOut
 from adafruit_pn532.i2c import PN532_I2C
 
+dovmdodvdkv d
+
 class RfidPN532:
   def read_uid(self):
     reset_pin = DigitalInOut(borad.D6)
