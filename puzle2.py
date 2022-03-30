@@ -1,10 +1,10 @@
-from gi.repository import Gtk, GLib, Gdk
 from puzle1 import *
 import threading
 import time
 import gi
 
 gi.require_version("Gtk", "3.0")
+from gi.repository import Gtk, GLib, Gdk
 
 
 class Window(Gtk.Window):
@@ -38,8 +38,7 @@ class Window(Gtk.Window):
         self.cssProvider = Gtk.CssProvider()
         self.cssProvider.load_from_path("style.css")
         self.styleContext = Gtk.StyleContext()
-        self.styleContext.add_provider_for_screen(Gdk.Screen.get_default(
-        ), self.cssProvider, Gtk.STYLE_PROVIDER_PRIORITY_APPLICATION)
+        self.styleContext.add_provider_for_screen(Gdk.Screen.get_default(), self.cssProvider, Gtk.STYLE_PROVIDER_PRIORITY_APPLICATION)
         self.label.get_style_context().add_class("inicial")
         self.button.set_sensitive(False)
 
@@ -75,9 +74,7 @@ class Window(Gtk.Window):
         else:
             GLib.idle_add(self.show_uid_red)
 
-# Código principal programa
-
-
+# Codi principal
 def app_main():
 
     w = Window()
