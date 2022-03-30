@@ -1,0 +1,13 @@
+.no_uid {
+  background: #0905ee;
+  color: #ffffff;
+  font: 12px Verdana;
+  border-radius: 20px;
+}
+
+.si_uid {
+  background: #c71a03;
+  color: #ffffff;
+  font: 12px Verdana;
+  border-radius: 20px;
+}
